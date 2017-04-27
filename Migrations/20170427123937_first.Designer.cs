@@ -5,10 +5,10 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using ConsoleApplication.Models;
 
-namespace _06_code_from_teachings_DEV.Migrations
+namespace _07_code_from_teachings.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20170405210250_first")]
+    [Migration("20170427123937_first")]
     partial class first
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

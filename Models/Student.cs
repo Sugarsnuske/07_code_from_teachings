@@ -20,7 +20,7 @@ namespace ConsoleApplication.Models
         public int Age { get; set; }
 
         // Navigation prop
-       // public IEnumerable<Enrollment> Enrollments { get; set; }
+        public IEnumerable<Enrollment> Enrollments { get; set; }
 
     }
 }

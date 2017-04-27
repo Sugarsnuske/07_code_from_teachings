@@ -8,8 +8,8 @@ namespace ConsoleApplication.Models
         public int StudentID { get; set; }
         public int Grade { get; set; }
 
-        // Navigation prop
 
+        // Navigation prop
         public Course Course { get; set; }
         public Student Student { get; set; }
     }

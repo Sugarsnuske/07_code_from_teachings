@@ -1,4 +1,5 @@
 using ConsoleApplication.Models;
+using ConsoleApplication.Models.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -18,6 +19,8 @@ namespace ConsoleApplication
             //       dotnet ef database update
             //       dotnet run
             servises.AddMvc();
+            servises.AddScoped<IStudentRepository, StudentRepository>();
+            //servises.AddScoped<IStudentRepository, SimpleStudentRepository>();
         }
 
        public void Configure(IApplicationBuilder app, ILoggerFactory logger, MyDbContext context) // 1. add a context parameter
